@@ -1,0 +1,17 @@
+#header {
+  margin-top: 10px;
+  border-radius: 25px;
+  background-color: rgb(10, 18, 65);
+  color: white;
+}
+
+.card-header {
+  background-color: rgb(7, 19, 75);
+  color: white;
+}
+
+button {
+  background-color: black !important;
+  border-radius: 25px !important;
+  width: 10rem !important;
+}

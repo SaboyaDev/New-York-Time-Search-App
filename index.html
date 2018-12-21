@@ -8,28 +8,38 @@
   <title>New York Times Search</title>
 
   <!-- Bootstrap CSS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" src="style/style.css">
+  <!-- Search Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Trash Icon -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <!-- Grid Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
   <div class="container">
 
-    <!-- Jumbotron -->
-    <div id="header" class="jumbotron" style="background-color:darkblue; color: white">
-      <h1>New York Times Search</h1>
+    <div id="header" class="jumbotron text-center">
+    <h1><i class="fa fa-newspaper-o" style="font-size:36px"></i> New York Times Search</h1>
     </div>
 
-    <dic class="row">
-      <!-- Search Parameter Panel -->
+    <div class="row">
+
       <div class="col-lg-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Search Parameters</h3>
+            <h6><i class="material-icons">&#xe241;</i> Search Parameters</h6>
           </div>
           <div class="card-body">
             <form role="form">
@@ -38,7 +48,7 @@
                 <input type="text" class="form-control" id="search">
               </div>
               <div class="form-group">
-                <label for="sel1">NUmber of Records to Retrieve:</label>
+                <label for="sel1">Number of Records to Retrieve:</label>
                 <select class="form-control" id="sel1">
                   <option value="1">1</option>
                   <option value="5" selected>5</option>
@@ -46,49 +56,39 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="startYear">Start Year:</label>
+                <label for="startYear">Start Year (Optional):</label>
                 <input type="text" class="form-control" id="startYear">
               </div>
               <div class="form-group">
-                <label for="endYear">End Year:</label>
+                <label for="endYear">End Year (Optional):</label>
                 <input type="text" class="form-control" id="endYear">
               </div>
               <div class="form-group form-check">
               </div>
-              <button type="submit" class="btn btn-dark">Submit</button>
-              <button type="button" class="btn btn-dark">Clear</button>
+              <button id="submit" type="submit" class="btn btn-dark"><i class='fas fa-search'></i> Search</button>
+              <button type="button" class="btn btn-dark"><i class="far fa-trash-alt"></i> Clear Results</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-
     <br>
-
     <div class="row">
-      <!-- Resutls Panel -->
+
       <div class="col-lg-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Search Results</h3>
+            <h6><i class="material-icons">grid_on</i> Search Results</h6>
           </div>
           <div class="card-body">
-            <!-- <div class="well">
-              <h2>Title</h2>
-              <h3>Author</h3>
-              <h4>Section</h4> -->
 
-              
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
 
 </body>
 
